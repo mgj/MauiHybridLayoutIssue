@@ -65,4 +65,13 @@
         <PackageReference Include="MudBlazor" Version="7.13.0" />
     </ItemGroup>
 
+    <ItemGroup>
+      <MauiXaml Update="MauiPages\HomeMauiPage.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </MauiXaml>
+      <MauiXaml Update="MauiPages\LoadingMauiPage.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </MauiXaml>
+    </ItemGroup>
+
 </Project>

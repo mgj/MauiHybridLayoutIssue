@@ -1,0 +1,19 @@
+﻿@page "/login"
+@using MyMauiHybridApp.MauiPages
+
+<h3>LoginPage</h3>
+
+<MudButton Variant="Variant.Filled" OnClick="OnClickLogin">Login</MudButton>
+
+<MudTextField Label="TestLabel" Class="mt-5" 
+              @bind-Value="TestString" />
+
+@code {
+    [Inject] private NavigationManager _navigationManager { get; set; } = null!;
+
+    public string TestString { get; set; }
+    private void OnClickLogin()
+    {
+        App.Current!.MainPage = new HomeMauiPage();
+    }
+}

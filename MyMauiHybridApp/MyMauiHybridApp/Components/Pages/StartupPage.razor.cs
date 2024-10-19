@@ -19,7 +19,7 @@ namespace MyMauiHybridApp.Components.Pages
             // Initialize custom configuration
             await Task.Delay(500);
 
-            var isLoggedIn = true;
+            var isLoggedIn = false;
             if (isLoggedIn)
             {
                 //_navigationManager.NavigateTo("/home", replace: true);
