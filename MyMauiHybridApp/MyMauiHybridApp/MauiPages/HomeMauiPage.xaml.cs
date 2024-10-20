@@ -15,6 +15,8 @@ public partial class HomeMauiPage : Shell
 
     private async Task Init()
     {
+        // More initialization of the app, navigation, features etc.
+        await Task.Delay(500);
 
         // Remove the loading ShellContent
         if (this.Items.Contains(homeMauiPageLoadingShellContent))
