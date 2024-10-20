@@ -22,7 +22,6 @@ namespace MyMauiHybridApp.Components.Pages
             var isLoggedIn = false;
             if (isLoggedIn)
             {
-                //_navigationManager.NavigateTo("/home", replace: true);
                 App.Current!.MainPage = new HomeMauiPage();
             }
             else
