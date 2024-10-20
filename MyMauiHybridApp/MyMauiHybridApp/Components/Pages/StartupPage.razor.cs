@@ -12,7 +12,7 @@ namespace MyMauiHybridApp.Components.Pages
 {
     public partial class StartupPage
     {
-        [Inject] NavigationManager _navigationManager { get; set; }
+        [Inject] NavigationManager _navigationManager { get; set; } = null!;
 
         protected override async Task OnAfterRenderAsync(bool firstRender)
         {

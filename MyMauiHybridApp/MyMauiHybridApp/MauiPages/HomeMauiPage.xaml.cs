@@ -4,13 +4,13 @@ namespace MyMauiHybridApp.MauiPages;
 
 public partial class HomeMauiPage : Shell
 {
-	public List<TabBarItem> TabBarItems { get; set; }	
+    public List<TabBarItem> TabBarItems { get; set; } = [];
 
-	public HomeMauiPage()
+    public HomeMauiPage()
 	{
         InitializeComponent();
 
-        Init();
+        Task.Run(Init);
     }
 
     private async Task Init()
